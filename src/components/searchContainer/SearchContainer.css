@@ -1,0 +1,13 @@
+.searchContainer {
+  max-width: 600px;
+  padding: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  background: #f4f4f4;
+  text-align: left;
+}
+
+.searchContainer .spinner {
+  margin: 1em auto;
+  position: relative;
+}

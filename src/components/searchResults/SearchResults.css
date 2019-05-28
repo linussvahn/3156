@@ -1,0 +1,27 @@
+.searchResults {
+  list-style-type: none;
+  padding: 0;
+  margin: 0.2em 0 0 0;
+  background: white;
+  border: solid 1px rgb(189, 189, 189);
+  max-height: 200px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.searchResults li {
+  padding: 0.4em 0 0.4em 1em;
+  cursor: pointer;
+}
+
+.searchResults li::first-letter {
+  text-transform: uppercase;
+}
+
+.searchResults li:hover {
+  background: #f4f4f4;
+}
+
+.selected {
+  background: #f4f4f4;
+}

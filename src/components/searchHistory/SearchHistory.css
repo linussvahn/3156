@@ -1,0 +1,102 @@
+.searchHistory .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.searchHistory {
+  padding: 0 1em;
+  margin-top: 0.5em;
+}
+
+.searchHistory h2 {
+  font-size: 1.3em;
+}
+
+.clearHistoryButton {
+  text-decoration: underline;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-weight: 700;
+  outline: none;
+}
+
+.clearHistoryButton:hover {
+  color: rgb(95, 95, 95);
+}
+
+.searchHistory ul {
+  list-style-type: none;
+  padding: 1em 0;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.searchHistory li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 0.05em solid rgb(212, 212, 212);
+  padding: 1em 0;
+  flex-wrap: wrap;
+  font-weight: 700;
+}
+
+.searchHistory li:first-child {
+  border-bottom: 0.05em solid rgb(212, 212, 212);
+}
+
+.searchHistory li span {
+  display: flex;
+  align-items: center;
+}
+
+.searchHistory .right {
+  font-size: 0.8em;
+  color: grey;
+  font-weight: 400;
+}
+
+.searchHistory .left {
+  width: 100px;
+}
+
+.buttonDelete {
+  background: orange;
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+  margin-left: 1em;
+  height: 3.5em;
+  font-size: 1rem;
+  border: solid 0.1em rgb(148, 148, 148);
+  cursor: pointer;
+  outline: none;
+}
+
+.buttonDelete:hover {
+  box-shadow: 0 0 10px rgb(172, 172, 172);
+}
+
+.buttonDelete:after {
+  content: "\02715 ";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  margin: 0.2em 0 0.2em 0.4em;
+  border-radius: 100%;
+  width: 2em;
+  height: 2em;
+  font-size: large;
+}
+
+@media only screen and (min-width: 550px) {
+  .searchHistory .left {
+    width: unset;
+  }
+}
