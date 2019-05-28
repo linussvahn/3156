@@ -8,9 +8,6 @@ const getTimestamp = () => {
 
   const fullDate = `${YYYY}-${MM}-${DD} ${hh}:${mm}`;
 
-  console.log(MM);
-  console.log(fullDate);
-
   return fullDate;
 };
 
